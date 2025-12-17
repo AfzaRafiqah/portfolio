@@ -32,12 +32,13 @@ import close_black from "./close-black.png";
 import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
 import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
+import requirement_icon from "./requirement-icon.png";
+import database_icon from "./database-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import { data } from "autoprefixer";
 
 export const assets = {
   user_image,
@@ -74,8 +75,8 @@ export const assets = {
   close_white,
   web_icon,
   mobile_icon,
-  ui_icon,
-  graphics_icon,
+  requirement_icon,
+  database_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -86,55 +87,70 @@ export const workData = [
   {
     title: "eKKJS Markeplace",
     description: "Web eCommerce",
-    bgImage: "/work-1.png",
+    summary:
+      "eKKJS Marketplace is an eCommerce platform developed specifically for students and lecturers, featuring a multi-role system that supports buyers, sellers, and administrators. The platform is built using the Laravel framework with MySQL as the database. It enables users to buy and sell products within the academic community and includes a real-time chat feature that allows buyers to communicate directly with sellers. The chat functionality is implemented using Chatify, enhancing user interaction and transaction efficiency.",
+    bgImage: "/ekkjs.png",
+    tech: "Laravel, Bootstrap, MySQL",
   },
   {
     title: "Swatracker App",
     description: "Mobile Application",
-    bgImage: "/work-2.png",
+    summary:
+      "Swatracker (Schedule Waste Tracker) is a mobile application designed to track scheduled waste through QR code scanning. The app allows users to identify and trace waste efficiently by scanning QR codes and provides an email notification feature for reporting waste-related information. The mobile application is developed using B4X, while the backend is built with PHP. All system data is stored and managed using a MySQL database.",
+    bgImage: "/swatracker.png",
+    tech: "B4X, PHP, MySQL",
   },
   {
     title: "iEQA",
     description: "Web Development",
-    bgImage: "/work-3.png",
+    summary:
+      "iEQA (Ergonomic Questionnaire Assessment) is a web-based system designed to assist HSE consultants in conducting ergonomic questionnaire assessments more efficiently. The system contains multiple categories of assessment questions and provides an interactive dashboard that visualizes user data in graphical form, making it easier to analyze questionnaire results. The application is developed using the Laravel framework with MySQL as the database for data storage and management.",
+    bgImage: "/ieqa.png",
+    tech: "Laravel, Bootstrap, MySQL",
   },
   {
     title: "HSE-ON-TRACK",
     description: "Mobile Application",
-    bgImage: "/work-4.png",
+    summary:
+      "HSE-ON-TRACK is a mobile application designed to assist HR in managing employee activities efficiently. The app consists of three main modules: attendance, where employees can clock in and out; leave application; and vehicle booking. It is developed using React Native for the mobile interface, with a Laravel RESTful API backend and MySQL for data storage. Firebase Cloud Messaging is integrated to send notifications to employees who have not clocked in, ensuring timely attendance tracking.",
+    bgImage: "/hseontrack.png",
+    tech: "React Native, Laravel, MySQL, Firebase Cloud Messaging",
   },
   {
-    title: "HSE-ON-TRACK",
-    description: "Mobile Application",
-    bgImage: "/work-4.png",
+    title: "Video Interactive",
+    description: "Interactive Video Platform",
+    summary:
+      "Muzium Negara Gallery Interactive Video is an interactive web application developed to enhance visitor engagement through multimedia content. Built using HTML, CSS, and JavaScript, the application allows museum visitors to interact with both the web interface and embedded videos, creating a more immersive and informative gallery experience.",
+    bgImage: "/video-interactive.png",
+    tech: "HTML, CSS, JavaScript",
   },
 ];
 
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
+    title: "Web Application Development",
+    description: "Custom web apps, feature enhancements, and maintenance.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
-    title: "Mobile app",
-    description:
-      "Mobile app development involves creating software for mobile devices...",
+    title: "Mobile Application Development",
+    description: "Cross-platform mobile apps with intuitive interfaces.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.requirement_icon,
+    title: "System Analysis & Requirements",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Gather and document business needs and system specifications.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.database_icon,
+    title: "Database & System Design",
+    description:
+      "Efficient database structures and scalable system interfaces.",
     link: "",
   },
 ];
@@ -144,19 +160,21 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    description: "PHP, JavaScript/JQuery, HTML, CSS, C++, Java",
+  },
+  {
+    icon: assets.project_icon,
+    iconDark: assets.project_icon_dark,
+    title: "Technologies",
+    description:
+      "Laravel, React, React Native, Next.js, Bootstrap, Tailwind, WordPress, Flutter, B4X",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
-  },
-  {
-    icon: assets.project_icon,
-    iconDark: assets.project_icon_dark,
-    title: "Projects",
-    description: "Built more than 5 projects",
+    description:
+      "Bachelor of Information Technology (Hons.) Information Systems Engineering",
   },
 ];
 

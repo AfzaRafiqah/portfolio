@@ -53,7 +53,7 @@ const About = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
+          <p className="mb-5 max-w-2xl font-Ovo">
             I am an experienced System Developer with over 3 years of
             professional experience, specializing in software development,
             system analysis, and application maintenance. Throughout my career,
@@ -98,7 +98,7 @@ const About = () => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 1.3, duration: 0.5 }}
-            className="my-6 text-gray-700 font-Ovo dark:text-white/80"
+            className="my-3 text-gray-700 font-Ovo dark:text-white/80"
           >
             Tools I use
           </motion.h4>
